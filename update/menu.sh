@@ -1,6 +1,7 @@
 #!/bin/bash
 clear
 CYAN='\033[0;36m'
+NC='\033[0m'
 m="\033[0;1;36m"
 y="\033[0;1;37m"
 yy="\033[0;1;32m"
@@ -31,7 +32,7 @@ echo -e "$yy 16$y. • Update menu$wh"
 echo -e "$yy 17$y. • Pengaturan sistem$wh"
 echo -e "$yy 18$y. • Keluar$wh"
 echo -e "$yy 19$y. • Salin repo$wh"
-echo -e "$y-------------------------------------------------------------$wh"
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 read -p "Select From Options [ 1 - 19 ] : " menu
 case $menu in
 1)
