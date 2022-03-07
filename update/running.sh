@@ -314,7 +314,7 @@ total_ram=` grep "MemTotal: " /proc/meminfo | awk '{ print $2}'`
 totalram=$(($total_ram/1024))
 
 # TIPE PROCESSOR
-#totalcore="$(grep -c "^processor" /proc/cpuinfo)" 
+totalcore="$(grep -c "^processor" /proc/cpuinfo)" 
 #totalcore+=" Core"
 #corediilik="$(grep -c "^processor" /proc/cpuinfo)" 
 #tipeprosesor="$(awk -F ': | @' '/model name|Processor|^cpu model|chip type|^cpu type/ {
