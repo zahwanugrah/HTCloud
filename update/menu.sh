@@ -33,6 +33,10 @@ Tipe=$NAME
 #URL_SUPPORT=$HOME_URL
 #basedong=$ID
 
+# WAKTU SEKARANG 
+#harini=`date -d "0 days" +"%d-%m-%Y"`
+jam=`date -d "0 days" +"%X"`
+
 echo ""
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "$y             Telegram : HendraWahyuT $wh"
@@ -48,6 +52,7 @@ echo -e "⚜️ Total RAM   : ${totalram}MB"
 echo -e "⚜️ Public IP   : $MYIP"
 echo -e "⚜️ Domain      : $Domen"
 echo -e "⚜️ Client Name : $HOSTNAME"
+echo -e "⚜️ Jam         : $jam"
 echo -e "⚜️ Exp Script  : Lifetime"
 echo -e "⚜️ Version     : HT Cloud V2"
 echo ""
