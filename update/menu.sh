@@ -30,7 +30,7 @@ echo -e "$yy 16$y. • Update menu$wh"
 echo -e "$yy 17$y. • Pengaturan sistem$wh"
 echo -e "$yy 18$y. • Keluar$wh"
 echo -e "$yy 19$y. • Salin repo$wh"
-echo -e "$y-------------------------------------------------$wh"
+echo -e "$y-------------------------------------------------------------$wh"
 read -p "Select From Options [ 1 - 19 ] : " menu
 case $menu in
 1)
