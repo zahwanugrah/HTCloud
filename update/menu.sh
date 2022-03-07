@@ -12,7 +12,11 @@ wh="\033[0m"
 total_ram=` grep "MemTotal: " /proc/meminfo | awk '{ print $2}'`
 totalram=$(($total_ram/1024))
 
-# MY IP
+# IP Validation
+dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
+biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
+#########################
+
 MYIP=$(curl -sS ipinfo.io/ip)
 
 # GETTING DOMAIN NAME
