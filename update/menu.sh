@@ -97,6 +97,10 @@ running
 clear
 updatemenu
 ;;
+17)
+clear
+setmenu
+;;
 18)
 clear
 exit
