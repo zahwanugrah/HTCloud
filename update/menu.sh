@@ -18,6 +18,17 @@ MYIP=$(curl -sS ipinfo.io/ip)
 # GETTING DOMAIN NAME
 Domen="$(cat /etc/xray/domain)"
 
+# OS UPTIME
+uptime="$(uptime -p | cut -d " " -f 2-10)"
+
+# GETTING OS INFORMATION
+source /etc/os-release
+Versi_OS=$VERSION
+ver=$VERSION_ID
+Tipe=$NAME
+URL_SUPPORT=$HOME_URL
+basedong=$ID
+
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "$y             Telegram : HendraWahyuT $wh"
 echo -e "$y           Premium Auto Script By Hendra Wahyu$wh"
@@ -27,6 +38,7 @@ echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━�
 echo -e "$y             Informasi VPS $wh"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "⚜️ OS Name     : $Tipe"
+echo -e "⚜️ Uptime      : $uptime
 echo -e "⚜️ Total RAM   : ${totalram}MB"
 echo -e "⚜️ Public IP   : $MYIP"
 echo -e "⚜️ Domain      : $Domen"
