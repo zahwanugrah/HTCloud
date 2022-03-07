@@ -37,10 +37,10 @@ ver=$VERSION_ID
 country=ID
 state=Indonesia
 locality=Indonesia
-organization=infinity
-organizationalunit=infinity
-commonname=cdn.covid19.go.id
-email=hayuk69@gmail.com
+organization=hendratechinc
+organizationalunit=hendratechinc
+commonname=henzlink.me
+email=hendratech.inc@gmail.com
 
 # simple password minimal
 wget -O /etc/pam.d/common-password "https://${akbarvpn}/password"
