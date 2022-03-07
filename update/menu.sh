@@ -99,13 +99,9 @@ updatemenu
 ;;
 18)
 clear
-setmenu
-;;
-19)
-clear
 exit
 ;;
-20)
+19)
 clear
 copyrepo
 ;;
