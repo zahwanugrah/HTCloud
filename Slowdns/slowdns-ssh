@@ -87,25 +87,25 @@ echo ""
 echo "Verificando existência de key"
 sleep 2
 echo ""
-echo "      Por favor aguarde...   "
+echo "      Mohon tunggu...   "
 sleep 2
 cd
 key1="/root/server.key"
 key2="/root/server.pub"
 if [ -f $key1 ] && [ -f $key2 ]
 then
-echo -e "Arquivo de key encontrado!"
+echo -e "File kunci ditemukan!"
 sleep 1
 echo ""
 key () {
-echo "Como deseja obter sua key?"
+echo "Bagaimana Anda ingin mendapatkan kunci Anda?"
 echo ""
-echo "[ 1 ] | Usar key existente no arquivo"
-echo "[ 2 ] | Deletar arquivo e gerar nova key"
-echo "[ 3 ] | Deletar arquivo e usar key padrão"
-echo "[ x ] | Abortar instalação"
+echo "[ 1 ] | Gunakan kunci yang ada dalam file"
+echo "[ 2 ] | Hapus file dan buat kunci baru"
+echo "[ 3 ] | Hapus file dan gunakan kunci default"
+echo "[ x ] | Batalkan pemasangan"
 echo ""
-echo -ne "Digite uma opção: " && read opcao
+echo -ne "Masukkan opsi: " && read opcao
 case $opcao in
 1) Opcao1 ;;
 2) Opcao2 ;;
