@@ -22,12 +22,12 @@ Domen="$(cat /etc/xray/domain)"
 uptime="$(uptime -p | cut -d " " -f 2-10)"
 
 # GETTING OS INFORMATION
-source /etc/os-release
-Versi_OS=$VERSION
-ver=$VERSION_ID
+#source /etc/os-release
+#Versi_OS=$VERSION
+#ver=$VERSION_ID
 Tipe=$NAME
-URL_SUPPORT=$HOME_URL
-basedong=$ID
+#URL_SUPPORT=$HOME_URL
+#basedong=$ID
 
 echo ""
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
