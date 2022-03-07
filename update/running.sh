@@ -325,7 +325,7 @@ totalram=$(($total_ram/1024))
 # GETTING CPU INFORMATION
 #cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
 #cpu_usage="$((${cpu_usage1/\.*} / ${corediilik:-1}))"
-#cpu_usage+=" %"
+cpu_usage+=" %"
 
 # OS UPTIME
 #uptime="$(uptime -p | cut -d " " -f 2-10)"
