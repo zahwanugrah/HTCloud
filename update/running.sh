@@ -317,15 +317,15 @@ totalram=$(($total_ram/1024))
 totalcore="$(grep -c "^processor" /proc/cpuinfo)" 
 #totalcore+=" Core"
 #corediilik="$(grep -c "^processor" /proc/cpuinfo)" 
-#tipeprosesor="$(awk -F ': | @' '/model name|Processor|^cpu model|chip type|^cpu type/ {
+tipeprosesor="$(awk -F ': | @' '/model name|Processor|^cpu model|chip type|^cpu type/ {
   #                      printf $2;
       #                  exit
     #                    }' /proc/cpuinfo)"
 
 # GETTING CPU INFORMATION
-cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
+#cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
 cpu_usage="$((${cpu_usage1/\.*} / ${corediilik:-1}))"
-cpu_usage+=" %"
+#cpu_usage+=" %"
 
 # OS UPTIME
 #uptime="$(uptime -p | cut -d " " -f 2-10)"
@@ -346,11 +346,9 @@ echo -e ""
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m              ⇱ Sytem Information ⇲             \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "🌈 Hostname    : $HOSTNAME"
 echo -e "🌈 OS Name     : $Tipe"
 echo -e "🌈 Processor   : $tipeprosesor"
 echo -e "🌈 Proc Core   : $totalcore"
-echo -e "🌈 Virtual     : $typevps"
 echo -e "🌈 Cpu Usage   : $cpu_usage"
 echo -e "🌈 Total RAM   : ${totalram}MB"
 echo -e "🌈 Public IP   : $MYIP"
