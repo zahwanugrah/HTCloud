@@ -9,7 +9,7 @@ yl="\033[0;1;33m"
 wh="\033[0m"
 
 # TOTAL RAM
-total_ram=` grep "MemTotal: " /proc/meminfo | awk '{ print $2}'`
+#total_ram=` grep "MemTotal: " /proc/meminfo | awk '{ print $2}'`
 totalram=$(($total_ram/1024))
 
 # MY IP
@@ -29,6 +29,7 @@ Tipe=$NAME
 URL_SUPPORT=$HOME_URL
 basedong=$ID
 
+echo -e ""
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "$y             Telegram : HendraWahyuT $wh"
 echo -e "$y           Premium Auto Script By Hendra Wahyu$wh"
