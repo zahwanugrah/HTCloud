@@ -24,12 +24,11 @@ echo -e "$yy 13$y. • SLOWDNS MENU (Sedang Error)$wh"
 echo -e "$yy 14$y. • CEK SEMUA IP PORT$wh"
 echo -e "$yy 15$y. • CEK SEMUA SERVICE VPN$wh"
 echo -e "$yy 16$y. • UPDATE MENU$wh"
-echo -e "$yy 17$y. • FIX (Perbaiki SSLH+WS-TLS)$wh"
-echo -e "$yy 18$y. • SYSTEM SETTING$wh"
-echo -e "$yy 19$y. • EXIT (Keluar)$wh"
-echo -e "$yy 20$y. • COPYREPO$wh"
+echo -e "$yy 17$y. • SYSTEM SETTING$wh"
+echo -e "$yy 18$y. • EXIT (Keluar)$wh"
+echo -e "$yy 19$y. • COPYREPO$wh"
 echo -e "$y-------------------------------------------------$wh"
-read -p "Select From Options [ 1 - 20 ] : " menu
+read -p "Select From Options [ 1 - 19 ] : " menu
 case $menu in
 1)
 clear
@@ -94,10 +93,6 @@ running
 16)
 clear
 updatemenu
-;;
-17)
-clear
-sl-fix
 ;;
 18)
 clear
