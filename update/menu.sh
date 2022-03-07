@@ -15,7 +15,8 @@ totalram=$(($total_ram/1024))
 # MY IP
 MYIP=$(curl -sS ipinfo.io/ip)
 
-
+# GETTING DOMAIN NAME
+Domen="$(cat /etc/xray/domain)"
 
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "$y             Telegram : HendraWahyuT $wh"
