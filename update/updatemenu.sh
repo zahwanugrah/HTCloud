@@ -76,5 +76,4 @@ chmod +x setmenu
 chmod +x slowdnsmenu
 chmod +x running
 chmod +x updatemenu
-sl-download-info
 
