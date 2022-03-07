@@ -314,7 +314,7 @@ total_ram=` grep "MemTotal: " /proc/meminfo | awk '{ print $2}'`
 totalram=$(($total_ram/1024))
 
 # TIPE PROCESSOR
-totalcore="$(grep -c "^processor" /proc/cpuinfo)" 
+#totalcore="$(grep -c "^processor" /proc/cpuinfo)" 
 #totalcore+=" Core"
 #corediilik="$(grep -c "^processor" /proc/cpuinfo)" 
 tipeprosesor="$(awk -F ': | @' '/model name|Processor|^cpu model|chip type|^cpu type/ {
@@ -348,7 +348,7 @@ echo -e "\E[44;1;39m              ⇱ Sytem Information ⇲             \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "🌈 OS Name     : $Tipe"
 echo -e "🌈 Processor   : $tipeprosesor"
-echo -e "🌈 Proc Core   : $totalcore"
+#echo -e "🌈 Proc Core   : $totalcore"
 echo -e "🌈 Cpu Usage   : $cpu_usage"
 echo -e "🌈 Total RAM   : ${totalram}MB"
 echo -e "🌈 Public IP   : $MYIP"
