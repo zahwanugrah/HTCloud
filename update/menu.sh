@@ -12,7 +12,8 @@ wh="\033[0m"
 total_ram=` grep "MemTotal: " /proc/meminfo | awk '{ print $2}'`
 totalram=$(($total_ram/1024))
 
-
+# MY IP
+MYIP=$(curl -sS ipinfo.io/ip)
 
 
 
