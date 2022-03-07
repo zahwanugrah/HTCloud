@@ -324,7 +324,7 @@ totalram=$(($total_ram/1024))
 
 # GETTING CPU INFORMATION
 #cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
-cpu_usage="$((${cpu_usage1/\.*} / ${corediilik:-1}))"
+#cpu_usage="$((${cpu_usage1/\.*} / ${corediilik:-1}))"
 #cpu_usage+=" %"
 
 # OS UPTIME
@@ -347,8 +347,7 @@ echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━�
 echo -e "\E[44;1;39m              ⇱ Sytem Information ⇲             \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "🌈 OS Name     : $Tipe"
-echo -e "🌈 Processor   : $tipeprosesor"
-echo -e "🌈 Cpu Usage   : $cpu_usage"
+echo -e "🌈 Cpu Usage   : $cpu_usage1"
 echo -e "🌈 Total RAM   : ${totalram}MB"
 echo -e "🌈 Public IP   : $MYIP"
 echo -e "🌈 Domain      : $Domen"
