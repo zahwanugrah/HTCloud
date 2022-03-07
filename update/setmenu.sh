@@ -24,7 +24,7 @@ echo -e "$yy 13$y. Menu"
 echo -e "$yy 14$y. Exit"
 echo -e "$y-------------------------------------------------------------$wh"
 echo -e ""
-read -p "Select From Options [ 1 - 60 ] : " menu
+read -p "Select From Options [ 1 - 14 ] : " menu
 echo -e ""
 case $menu in
 1)
