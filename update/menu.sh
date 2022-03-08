@@ -151,6 +151,7 @@ setmenu
 clear
 exit
 ;;
+19)
 clear
 copyrepo
 ;;
