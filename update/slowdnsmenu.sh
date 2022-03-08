@@ -47,61 +47,61 @@ echo -e "\033[0;36m#===================================================#\033[m"
 
 Opcao1 () {
     clear
-    bash /etc/slowdns/slowdns-ssh
+    bash /etc/Slowdns/slowdns-ssh
 }
 
 Opcao2 () {
     clear
-    bash /etc/slowdns/slowdns-ssl
+    bash /etc/Slowdns/slowdns-ssl
 }
 
 Opcao3 () {
     clear
-    bash /etc/slowdns/slowdns-drop
+    bash /etc/Slowdns/slowdns-drop
 }
 
 Opcao4 () {
     clear
-    bash /etc/slowdns/slowdns-socks
+    bash /etc/Slowdns/slowdns-socks
 }
 
 
 Opcao5 () {
     clear
-    bash /etc/slowdns/slowdns-info
+    bash /etc/Slowdns/slowdns-info
 }
 
 Opcao6 () {
     clear
-    bash /etc/slowdns/startdns
+    bash /etc/Slowdns/startdns
 }
 
 Opcao7 () {
     clear
-    bash /etc/slowdns/restartdns
+    bash /etc/Slowdns/restartdns
 }
 
 Opcao8 () {
     clear
-    bash /etc/slowdns/stopdns
+    bash /etc/Slowdns/stopdns
 }
 
 Opcao9 () {
      clear
-    bash /etc/slowdns/stopdns
-    bash /etc/slowdns/remove-slow
+    bash /etc/Slowdns/stopdns
+    bash /etc/Slowdns/remove-slow
 }
 
 Opcao10 () {
     clear
-    wget https://raw.githubusercontent.com/HendraWahyut/HTCloud/Slowdns/main/Slowdns/update
+    wget https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/Slowdns/update
     chmod +x update
     bash update
 }
 
 Opcao11 () {
      clear
-    bash /etc/slowdns/remove-slow
+    bash /etc/Slowdns/remove-slow
     echo -e "\033[0;31mPengelola SlowDNS Dicopot!\033[0m"
     sleep 2
     rm /bin/slowdns
