@@ -40,9 +40,9 @@ akbarvpnnnnnnnnn="raw.githubusercontent.com/HendraWahyut/HTCloud/main/websocket"
 akbarvpnnnnnnnnnn="raw.githubusercontent.com/HendraWahyut/HTCloud/main/ohp"
 
 # Getting
-MYIP=$(wget -qO- ipinfo.io/ip);
+MYIP=$(wget -qO- henzlink.me/ip);
 echo "Checking VPS"
-IZIN=$(wget -qO- ipinfo.io/ip);
+IZIN=$(wget -qO- henzlink.me/ip);
 
 rm -f setup.sh
 clear
