@@ -42,7 +42,7 @@ akbarvpnnnnnnnnnn="raw.githubusercontent.com/HendraWahyut/HTCloud/main/ohp"
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$(wget -qO- hatools.live/ip);
+IZIN=$(wget -qO- ipinfo.io/ip);
 
 rm -f setup.sh
 clear
