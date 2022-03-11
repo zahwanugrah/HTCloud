@@ -164,11 +164,13 @@ wget -qO- -O vpsroot.sh https://raw.githubusercontent.com/HendraWahyut/HTCloud/m
 
 • IPtables : [ON]
 
-• Auto-Reboot : 08 : 00 & 20 : 00 GMT +7
+• Auto-Reboot : [ON]
 
 • IPv6 : [OFF]
 
-• Autoreboot On 05.00 GMT +7
+• Autoreboot On 08.00 GMT +7
+
+• Autoreboot On 20.00 GMT +7
 
 • Auto Delete Expired Account
 
