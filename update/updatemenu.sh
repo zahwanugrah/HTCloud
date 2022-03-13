@@ -27,6 +27,9 @@ rm -rf copyrepo
 cd /usr/bin
 rm -rf menu
 rm -rf menuinfo
+wget -O restart "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/ssh/restart.sh"
+rm -rf restart
+wget -O restart "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/ssh/restart.sh"
 wget -O menu "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/update/menu.sh"
 wget -O ipsaya "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/update/ipsaya.sh"
 wget -O sl-fix "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/sslh-fix/sl-fix"
@@ -55,7 +58,10 @@ wget -O grpc2 "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/grpc/
 wget -O grpcupdate2 "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/update/grpcupdate2.sh"
 wget -O grpcmenu2 "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/update/grpcmenu2.sh"
 
-
+chmod +x restart
+chmod +x grpcmenu2
+chmod +x grpc2
+chmod +x grpcupdate2
 chmod +x sl-download-info
 chmod +x menuinfo
 chmod +x slhost
@@ -80,4 +86,4 @@ chmod +x setmenu
 chmod +x slowdnsmenu
 chmod +x running
 chmod +x updatemenu
-
+grpc2
