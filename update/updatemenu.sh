@@ -51,6 +51,10 @@ wget -O copyrepo "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/sa
 wget -O slhost "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/ssh/slhost.sh"
 wget -O sl-download-info "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/contohinfo/sl-download-info.sh"
 wget -O menuinfo "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/update/menuinfo.sh"
+wget -O grpc2 "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/grpc/fb-grpc.sh"
+wget -O grpcupdate2 "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/update/grpcupdate2.sh"
+wget -O grpcmenu2 "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/update/grpcmenu2.sh"
+
 
 chmod +x sl-download-info
 chmod +x menuinfo
