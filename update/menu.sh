@@ -70,14 +70,15 @@ echo -e "$yy 10$y. Menu XRAY TROJAN$wh"
 echo -e "$yy 11$y. Menu TROJAN GO$wh"
 echo -e "$yy 12$y. Menu XRAY GRPC$wh"
 echo -e "$yy 13$y. Menu SLOWDNS (OFF)$wh"
-echo -e "$yy 14$y. Cek semua ip port$wh"
-echo -e "$yy 15$y. Cek semua service vpn$wh"
-echo -e "$yy 16$y. Update menu$wh"
-echo -e "$yy 17$y. Pengaturan sistem$wh"
-echo -e "$yy 18$y. Keluar$wh"
-echo -e "$yy 19$y. Salin repo$wh"
+echo -e "$yy 14$y. Menu V2 GRPC (NEW)$wh"
+echo -e "$yy 15$y. Cek semua ip port$wh"
+echo -e "$yy 16$y. Cek semua service vpn$wh"
+echo -e "$yy 17$y. Update menu$wh"
+echo -e "$yy 18$y. Pengaturan sistem$wh"
+echo -e "$yy 19$y. Keluar$wh"
+echo -e "$yy 20$y. Salin repo$wh"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-read -p "Select From Options [ 1 - 19 ] : " menu
+read -p "Select From Options [ 1 - 20 ] : " menu
 case $menu in
 1)
 clear
@@ -133,25 +134,29 @@ slowdnsmenu
 ;;
 14)
 clear
-ipsaya
+grpcmenu2
 ;;
 15)
 clear
-running
+ipsaya
 ;;
 16)
 clear
-updatemenu
+running
 ;;
 17)
 clear
-setmenu
+updatemenu
 ;;
 18)
 clear
-exit
+setmenu
 ;;
 19)
+clear
+exit
+;;
+20)
 clear
 copyrepo
 ;;
