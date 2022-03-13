@@ -39,7 +39,7 @@ state=Indonesia
 locality=Indonesia
 organization=hendratechinc
 organizationalunit=hendratechinc
-commonname=henzlink.me
+commonname=masndra.site
 email=hendratech.inc@gmail.com
 
 # simple password minimal
@@ -184,11 +184,11 @@ echo "/bin/false" >> /etc/shells
 echo "/usr/sbin/nologin" >> /etc/shells
 /etc/init.d/dropbear restart
 
-# install squid
+# install squid (proxy nya aku matikan)
 cd
-apt -y install squid3
-wget -O /etc/squid/squid.conf "https://${akbarvpn}/squid3.conf"
-sed -i $MYIP2 /etc/squid/squid.conf
+#apt -y install squid3
+#wget -O /etc/squid/squid.conf "https://${akbarvpn}/squid3.conf"
+#sed -i $MYIP2 /etc/squid/squid.conf
 
 # Install SSLH
 apt -y install sslh
@@ -518,11 +518,13 @@ chmod +x addtrgo
 chmod +x deltrgo
 chmod +x renewtrgo
 chmod +x cektrgo
-echo "0 20 * * * root xp" >> /etc/crontab
-echo "0 20 * * * root delexp" >> /etc/crontab
-echo "0 0 * * * root clearlog && sslh-fix-reboot" >> /etc/crontab
-echo "0 8 * * * root clearlog && reboot" >> /etc/crontab
-echo "0 20 * * * root clearlog && reboot" >> /etc/crontab
+echo "0 5 * * * root clearlog && reboot" >> /etc/crontab
+echo "0 0 * * * root xp" >> /etc/crontab
+echo "0 1 * * * root delexp" >> /etc/crontab
+echo "10 4 * * * root clearlog && sslh-fix-reboot" >> /etc/crontab
+echo "0 0 * * * root clearlog && reboot" >> /etc/crontab
+echo "0 12 * * * root clearlog && reboot" >> /etc/crontab
+echo "0 18 * * * root clearlog && reboot" >> /etc/crontab
 
 
 # remove unnecessary files
