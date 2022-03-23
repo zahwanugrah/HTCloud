@@ -6,8 +6,7 @@ apt update -y
 sudo apt install git -y
 apt install git -y
 cd
-mkdir /root/HTCloud/
-cd /root/HTCloud/
+cd /root/
 git clone https://github.com/HendraWahyut/HTCloud
 
 cd
