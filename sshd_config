@@ -106,7 +106,7 @@ PrintMotd no
 #VersionAddendum none
 
 # no default banner path
-#Banner /etc/issue.net
+#Banner none
 
 # Allow client to pass locale environment variables
 AcceptEnv LANG LC_*
@@ -129,3 +129,5 @@ ClientAliveInterval 120
 #TrustedUserCAKeys /etc/ssh/lightsail_instance_ca.pub
 #
 Banner /etc/issue.net
+AllowTcpForwarding yes
+AllowGroups dnsroot
