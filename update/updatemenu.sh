@@ -27,9 +27,11 @@ rm -rf copyrepo
 cd /usr/bin
 rm -rf menu
 rm -rf menuinfo
-wget -O restart "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/ssh/restart.sh"
 rm -rf restart
+rm -rf addssh
+wget -O install-sldns "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/SLDNS/install-sldns"
 wget -O restart "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/ssh/restart.sh"
+wget -O addssh "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/ssh/addssh.sh"
 wget -O menu "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/update/menu.sh"
 wget -O ipsaya "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/update/ipsaya.sh"
 wget -O sl-fix "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/sslh-fix/sl-fix"
@@ -54,11 +56,13 @@ wget -O copyrepo "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/sa
 wget -O slhost "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/ssh/slhost.sh"
 wget -O sl-download-info "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/contohinfo/sl-download-info.sh"
 wget -O menuinfo "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/update/menuinfo.sh"
-wget -O grpc2 "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/grpc/fb-grpc.sh"
-wget -O grpcupdate2 "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/update/grpcupdate2.sh"
-wget -O grpcmenu2 "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/update/grpcmenu2.sh"
+#wget -O grpc2 "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/grpc/fb-grpc.sh"
+#wget -O grpcupdate2 "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/update/grpcupdate2.sh"
+#wget -O grpcmenu2 "https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/update/grpcmenu2.sh"
 
+chmod +x install-sldns
 chmod +x restart
+chmod +x addssh
 chmod +x grpcmenu2
 chmod +x grpc2
 chmod +x grpcupdate2
@@ -86,4 +90,6 @@ chmod +x setmenu
 chmod +x slowdnsmenu
 chmod +x running
 chmod +x updatemenu
-grpc2
+sl-download-info
+install-sldns
+cd
