@@ -191,8 +191,8 @@ cd
 #sed -i $MYIP2 /etc/squid/squid.conf
 
 # Install SSLH
-apt -y install sslh
-rm -f /etc/default/sslh
+#apt -y install sslh
+#rm -f /etc/default/sslh
 
 # Settings SSLH
 cat > /etc/default/sslh <<-END
