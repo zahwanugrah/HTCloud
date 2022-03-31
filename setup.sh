@@ -19,25 +19,25 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Link Hosting Kalian Untuk Ssh Vpn
-akbarvpn="raw.githubusercontent.com/HendraWahyut/HTCloud/main/ssh"
+akbarvpn="raw.githubusercontent.com/zahwanugrah/HTCloud/main/ssh"
 # Link Hosting Kalian Untuk Sstp
-akbarvpnn="raw.githubusercontent.com/HendraWahyut/HTCloud/main/sstp"
+akbarvpnn="raw.githubusercontent.com/zahwanugrah/HTCloud/main/sstp"
 # Link Hosting Kalian Untuk Ssr
-akbarvpnnn="raw.githubusercontent.com/HendraWahyut/HTCloud/main/ssr"
+akbarvpnnn="raw.githubusercontent.com/zahwanugrah/HTCloud/main/ssr"
 # Link Hosting Kalian Untuk Shadowsocks
-akbarvpnnnn="raw.githubusercontent.com/HendraWahyut/HTCloud/main/shadowsocks"
+akbarvpnnnn="raw.githubusercontent.com/zahwanugrah/HTCloud/main/shadowsocks"
 # Link Hosting Kalian Untuk Wireguard
-akbarvpnnnnn="raw.githubusercontent.com/HendraWahyut/HTCloud/main/wireguard"
+akbarvpnnnnn="raw.githubusercontent.com/zahwanugrah/HTCloud/main/wireguard"
 # Link Hosting Kalian Untuk Xray
-akbarvpnnnnnn="raw.githubusercontent.com/HendraWahyut/HTCloud/main/xray"
+akbarvpnnnnnn="raw.githubusercontent.com/zahwanugrah/HTCloud/main/xray"
 # Link Hosting Kalian Untuk Ipsec
-akbarvpnnnnnnn="raw.githubusercontent.com/HendraWahyut/HTCloud/main/ipsec"
+akbarvpnnnnnnn="raw.githubusercontent.com/zahwanugrah/HTCloud/main/ipsec"
 # Link Hosting Kalian Untuk Backup
-akbarvpnnnnnnnn="raw.githubusercontent.com/HendraWahyut/HTCloud/main/backup"
+akbarvpnnnnnnnn="raw.githubusercontent.com/zahwanugrah/HTCloud/main/backup"
 # Link Hosting Kalian Untuk Websocket
-akbarvpnnnnnnnnn="raw.githubusercontent.com/HendraWahyut/HTCloud/main/websocket"
+akbarvpnnnnnnnnn="raw.githubusercontent.com/zahwanugrah/HTCloud/main/websocket"
 # Link Hosting Kalian Untuk Ohp
-akbarvpnnnnnnnnnn="raw.githubusercontent.com/HendraWahyut/HTCloud/main/ohp"
+akbarvpnnnnnnnnnn="raw.githubusercontent.com/zahwanugrah/HTCloud/main/ohp"
 
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
@@ -67,16 +67,16 @@ wget https://${akbarvpnnnnn}/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
 wget https://${akbarvpnnnnnnn}/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 wget https://${akbarvpnnnnnnnn}/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 # Websocket
-wget https://${akbarvpnnnnnnnnn}/edu.sh && chmod +x edu.sh && ./edu.sh
+#wget https://${akbarvpnnnnnnnnn}/edu.sh && chmod +x edu.sh && ./edu.sh
 # Ohp Server
-wget https://${akbarvpnnnnnnnnnn}/ohp.sh && chmod +x ohp.sh && ./ohp.sh
+#wget https://${akbarvpnnnnnnnnnn}/ohp.sh && chmod +x ohp.sh && ./ohp.sh
 # Install Slowdns Server
 # wget https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/Slowdns/install && chmod +x install && bash install
 # Informasi IP Saya dan Semua Port TCP UDP
 # wget https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/ipsaya.sh && chmod +x ipsaya.sh
 #
 # install xray grpc
-wget https://raw.githubusercontent.com/HendraWahyut/HTCloud/main/grpc/sl-grpc.sh && chmod +x sl-grpc.sh && screen -S sl-grpc ./sl-grpc.sh
+wget https://raw.githubusercontent.com/zahwanugrah/HTCloud/main/grpc/sl-grpc.sh && chmod +x sl-grpc.sh && screen -S sl-grpc ./sl-grpc.sh
 #
 
 rm -f /root/ssh-vpn.sh
